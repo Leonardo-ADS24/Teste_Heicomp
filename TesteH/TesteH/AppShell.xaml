@@ -3,13 +3,23 @@
     x:Class="TesteH.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:TesteH"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:pages="clr-namespace:TesteH.Pages"
+    Shell.FlyoutBehavior="Flyout"
     Title="TesteH">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem Title="Início">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:Home}"
+            Route="home"
+         />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Alunos">
+        <ShellContent
+            Title="Alunos"
+            ContentTemplate="{DataTemplate pages:Alunos}"
+            Route="alunos"
+            />
+    </FlyoutItem>
 
 </Shell>

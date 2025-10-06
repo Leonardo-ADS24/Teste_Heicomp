@@ -8,7 +8,7 @@ public partial class Login : ContentPage
 	}
 
 	private async void OnButtonLoginClicked(object sender, EventArgs e)
-    {   //PushModalAsync tira botão de voltar para página login 
-        await Navigation.PushModalAsync(new MainPage());
+    {
+		Application.Current.MainPage = new AppShell();
 	}
 }
