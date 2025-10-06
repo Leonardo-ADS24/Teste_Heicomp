@@ -22,4 +22,60 @@
             />
     </FlyoutItem>
 
+    <FlyoutItem Title="Colaboradores">
+        <ShellContent
+            Title="Colaboradores"
+            ContentTemplate="{DataTemplate pages:Colaboradores}"
+            Route="colaboradores"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Cargos">
+        <ShellContent
+            Title="Cargos"
+            ContentTemplate="{DataTemplate pages:Cargos}"
+            Route="cargos"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Rotatividade">
+        <ShellContent
+            Title="Rotatividade"
+            ContentTemplate="{DataTemplate pages:Rotatividade}"
+            Route="rotatividade"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Absenteismo">
+        <ShellContent
+            Title="Absenteismo"
+            ContentTemplate="{DataTemplate pages:Absenteísmo}"
+            Route="absenteismo"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Gráfico Detalhados">
+        <ShellContent
+            Title="Gráfico Detalhados"
+            ContentTemplate="{DataTemplate pages:Graficos}"
+            Route="grafico"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Configurações">
+        <ShellContent
+            Title="Configurações"
+            ContentTemplate="{DataTemplate pages:Configuracoes}"
+            Route="configuracoes"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Área Administrativa">
+        <ShellContent
+            Title="Área Administrativa"
+            ContentTemplate="{DataTemplate pages:AreaAdministrativa}"
+            Route="areaadministrativa"
+            />
+    </FlyoutItem>
+
 </Shell>
