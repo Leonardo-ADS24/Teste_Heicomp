@@ -3,13 +3,79 @@
     x:Class="TesteH.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:TesteH"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:pages="clr-namespace:TesteH.Pages"
+    Shell.FlyoutBehavior="Flyout"
     Title="TesteH">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem Title="Início">
+        <ShellContent
+            ContentTemplate="{DataTemplate pages:Home}"
+            Route="home"
+         />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Alunos">
+        <ShellContent
+            Title="Alunos"
+            ContentTemplate="{DataTemplate pages:Alunos}"
+            Route="alunos"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Colaboradores">
+        <ShellContent
+            Title="Colaboradores"
+            ContentTemplate="{DataTemplate pages:Colaboradores}"
+            Route="colaboradores"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Cargos">
+        <ShellContent
+            Title="Cargos"
+            ContentTemplate="{DataTemplate pages:Cargos}"
+            Route="cargos"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Rotatividade">
+        <ShellContent
+            Title="Rotatividade"
+            ContentTemplate="{DataTemplate pages:Rotatividade}"
+            Route="rotatividade"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Absenteismo">
+        <ShellContent
+            Title="Absenteismo"
+            ContentTemplate="{DataTemplate pages:Absenteísmo}"
+            Route="absenteismo"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Gráfico Detalhados">
+        <ShellContent
+            Title="Gráfico Detalhados"
+            ContentTemplate="{DataTemplate pages:Graficos}"
+            Route="grafico"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Configurações">
+        <ShellContent
+            Title="Configurações"
+            ContentTemplate="{DataTemplate pages:Configuracoes}"
+            Route="configuracoes"
+            />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Área Administrativa">
+        <ShellContent
+            Title="Área Administrativa"
+            ContentTemplate="{DataTemplate pages:AreaAdministrativa}"
+            Route="areaadministrativa"
+            />
+    </FlyoutItem>
 
 </Shell>

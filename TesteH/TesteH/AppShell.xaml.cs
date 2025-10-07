@@ -1,4 +1,6 @@
-﻿namespace TesteH
+﻿using TesteH.Pages;
+
+namespace TesteH
 {
     public partial class AppShell : Shell
     {
